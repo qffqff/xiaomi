@@ -478,14 +478,15 @@
 .banner{
 	width: 1226px;
 	height: 460px;
+	background-color: powderblue;
 	margin: 0 auto;
 	position: relative;
 }
 .banner-img{
-	width: 1226px;
-	height: 460px;
+	width: 100%;
+	height: 100%;
 }
-.banner-nav{
+.banner-nav{	
 	width: 234px;
 	height: 420px;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -502,12 +503,13 @@
 	font-size: 14px;
 	color: #fff;
 	line-height: 42px;
+	cursor: pointer;
+}
+.banner-item:hover{
+	background-color: orangered;
 }
 .banner-item span:nth-child(2){
 	float: right;
-}
-.banner-item:hover{
-    background-color: #ff6700;
 }
 .banner-btn{
 	width: 41px;
@@ -523,31 +525,43 @@
 	z-index: 999;
 }
 .banner-btn:hover{
-	background-color: rgba(0, 0, 0, 0.6)
+	background-color: rgba(0, 0, 0, 0.7)
 }
-/* .banner .banner-btn:nth-child(1){
+.banner .lbtn{
 	left: 234px;
-}
-.banner .banner-btn:nth-child(2){
-	right: 0;
-} */
-.lbtn{
-	left: 234px;
-	text-align: center;
 }
 .rbtn{
 	right: 0;
-	text-align: center;
 }
 .banner-pages{
-	width: 140px;
+	width: 140px!important;
 	height: 10px;
 	position: absolute;
 	right: 30px;
-	bottom: 10px;
+	bottom: 10px!important;
+	z-index: 999;
+	left: auto!important;
+}
+.banner .banner-pages .swiper-pagination-bullet{
+	width: 6px;
+	height: 6px;
+	background-color: #ccc;
+	border-radius: 50%;
+	float: left;
+	margin: 0 5px;
+	border: 2px solid #666;
+	cursor: pointer;
+}
+.banner-pages{
+	width: 140px!important;
+	height: 10px;
+	position: absolute;
+	right: 30px;
+	left: auto;
+	bottom: 10px!important;
 	z-index: 999;
 }
-.banner-pages li{
+.banner .banner-pages .swiper-pagination-bullet{
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;

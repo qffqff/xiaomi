@@ -109,8 +109,8 @@
 			<div class="banner-item"><span>米兔 生活周边</span><span> > </span></div>
 	  </div>
 
-	  <div class="banner-btn lbtn"> < </div>
-	  <div class="banner-btn rbtn"> > </div>
+	  <div class="banner-btn lbtn swiper-button-prev swiper-button-white "></div>
+	  <div class="banner-btn rbtn swiper-button-next swiper-button-white "></div>
 
 	  <ul class="banner-pages swiper-pagination" ><!--  type="disc" -->
 			<!-- <li></li>
@@ -1153,8 +1153,7 @@
 				</div>
 			</div>
 			<div class="zuizhong-wenzi1-box01">
-				<div class="shengming">
-					@
+				<div class="shengming">@
 					<a href="" class="zuizhong-lianjie">mi.com</a>
 					京ICP证110507号 
 					<a href="" class="zuizhong-lianjie">京ICP备10046444号</a>
@@ -1172,9 +1171,12 @@
 </html>
 <script> 
 var mySwiper = new Swiper('.swiper-container', {
-	autoplay: 600,//可选选项，自动滑动
+	autoplay: 1200,//可选选项，自动滑动
 	effect : 'fade',
 	pagination : '.swiper-pagination',
+	prevButton:'.swiper-button-prev',
+	nextButton:'.swiper-button-next',
+	loop : true,
 })
 
 let floor = document.querySelectorAll(".floor");
@@ -1196,7 +1198,6 @@ document.onscroll = function(){
 		}
 	}
 }
-
 
 </script>
 
